@@ -1,0 +1,74 @@
+# Security Header Checker
+
+A Python-based web security tool that checks whether a website implements important HTTP security headers.
+
+## Features
+
+* Checks Content-Security-Policy (CSP)
+* Checks X-Frame-Options
+* Checks X-Content-Type-Options
+* Checks Strict-Transport-Security (HSTS)
+* Checks Referrer-Policy
+* Checks Permissions-Policy
+* Simple and beginner-friendly
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/security-header-checker.git
+cd security-header-checker
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+Run the script:
+
+```bash
+python header_checker.py
+```
+
+Enter a website URL when prompted:
+
+```text
+Enter website URL (https://...): https://example.com
+```
+
+Example output:
+
+```text
+Checking security headers for https://example.com
+
+[FOUND] Content-Security-Policy
+[FOUND] X-Frame-Options
+[MISSING] Strict-Transport-Security
+[MISSING] Permissions-Policy
+```
+
+## Technologies Used
+
+* Python
+* Requests Library
+* HTTP Security Headers
+
+## Use Cases
+
+* Security assessments
+* Website hardening checks
+* Learning web security concepts
+* Bug bounty reconnaissance
+
+## Disclaimer
+
+This tool is intended for educational, defensive, and authorized security testing purposes only. Always obtain permission before testing systems you do not own.
+
+## License
+
+MIT License
